@@ -1,0 +1,163 @@
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/drivy.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FEE378;
+    text-shadow: 2px 2px chocolate;
+}
+
+.hero-text2 {
+    text-align: left;
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 2px chocolate;
+}
+
+.hero-text-center {
+    position: absolute;
+    color: black;
+    font-size: 90px;
+    text-shadow: 2px 2px chocolate;
+}
+
+.hero-text-center2 {
+    position: absolute;
+    color: black;
+    font-size: 70px;
+    text-shadow: 2px 2px chocolate;
+}
+
+.hero-text-center3 {
+    text-align: justify;
+    position: absolute;
+    color: black;
+    font-size: 40px;
+    text-shadow: 2px 2px chocolate;
+}
+
+.hero-text-content {
+    color: black;
+    font-size: 60px;
+    font: caption;
+}
+
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+    background: #DC8C01;
+    padding: 25px;
+}
+
+.parallax {
+    background: url(../images/city1.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    text-align: center;
+}
+
+.parallax2 {
+    background: url(../images/city2.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    text-align: center;
+}
+
+.parallax3 {
+    background: url(../images/city3.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    text-align: center;
+}
+
+.parallax4 {
+    background: url(../images/city4.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    text-align: center;
+}
+
+.parallax5 {
+    background: url(../images/footer.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    text-align: center;
+}
+
+
+/* The sidebar menu */
+
+.sidenav {
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 160px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #010B14;
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #F2C73A;
+    display: block;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #E8A800;
+}
+
+
+/* Style page content */
+
+.main {
+    margin-left: 160px;
+    /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

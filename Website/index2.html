@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<title>Drivy</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body,
+        html {
+            background-color: #010B14;
+            background-image: url("../images/bg.png");
+            height: 100%;
+            margin: 0;
+            font-family: "Inconsolata";
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Other stuff -->
+
+    <div class="hero-image" id="home">
+        <div class="hero-text">
+            <h1 style="font-size:100px">Drivy</h1>
+            <p>A taxi application for Android phones.</p>
+        </div>
+    </div>
+    <!-- Menu -->
+
+    <div class="sidenav">
+        <a href="#home">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="#prereq">Pre-requisites</a>
+        <a href="#setup">Setup and Build Plan</a>
+        <a href="#team">Team</a>
+    </div>
+
+    <!--Photo thingy 1-->
+    <div class="container" id="overview">
+        <div class="parallax">
+            <div class="hero-text-center">
+                <h1>
+                    <i>Overview</i></h1>
+            </div>
+        </div>
+    </div>
+    <!--Write about overview here: -->
+    <div class="container">
+        <div class="hero-text-content">
+            <h1 class="hero-text2">We have made a
+                <em>Taxi</em> application similar to Uber.</h1>
+            <h2 class="hero-text2"> It runs on Android verion 4.1 or newer. </h2>
+            <!--application is a redesign for the Uber app. </p>
+            <p>After you sign up as a client or a driver, you will be remembered as either a client or a driver after each login. </p>
+            <p>Using the Google Maps API, your current location will be used and systematically updated. This information is used for the main part: the client requests a Pickup from a driver, which can either accept or decline it. If the driver accepts
+                the Pickup, the distance between the users is continuously updated and displayed to both of them. </p>
+            --><img src=" images/poza1.png " style="width:300px;height:600px; ">
+            <img src="images/poza3.png " style="width:300px;height:600px; ">
+            <img src="images/poza4.png " style="width:300px;height:600px; ">
+		 
+
+
+        </div>
+    </div>
+
+    <!--Photo thingy 2-->
+    <div class="container " id="prereq">
+        <div class="parallax2 ">
+            <div class="hero-text-center ">
+                <h1>
+                    <i>Pre-requisites</i></h1>
+            </div>
+        </div>
+    </div>
+    <!--Write about pre-requisites here :-->
+    <div class="container">
+        <div class="hero-text-content ">
+            <h1 class="hero-text2"> For this project we have used:
+            </h1>
+            <ul>
+                <li>
+                    <a href="https://developer.android.com/studio" class="hero-text2">Android Studio </a></li>
+                <li><a href="https://firebase.google.com/" class="hero-text2">FireBase</a></li>
+                <li>
+                    <a href="https://github.com/firebase/geofire-java" class="hero-text2">Geofire</a>
+                </li>
+                <li>
+                    <a href="https://github.com/bumptech/glide" class="hero-text2">Glide</a>
+                </li>
+                <li>
+                    <a href="https://developers.google.com/places/android-sdk/autocomplete" class="hero-text2">Place Autocomplete</a>
+                </li>
+                <li>
+                    <a href="https://developers.google.com/maps/documentation" class="hero-text2">Google Maps API</a>
+                </li>
+                <!-- USE THIS FOR LINKS HERE : 
+                <li>
+                    <a href="" class="hero-text2"></a>
+                </li> -->
+                <li>
+                    <a href="https://www.flaticon.com/" class="hero-text2">Flaticon for the icons</a>
+                </li>
+            </ul>
+            <h1 class="hero-text2">The application can run on the phone and you will need: Android version 4.1 or newer, internet connection, active location and a well-functioning batery.</h1>
+        </div>
+    </div>
+
+    <!--Photo thingy 3 -->
+    <div class=" container " id="setup">
+        <div class="parallax3 ">
+            <div class="hero-text-center2 ">
+                <h1>
+                    <i>Setup and Build plan</i>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!--Write about setup and build plan here :-->
+    <div class="container">
+        <div class="hero-text-content ">
+            <h1 class="hero-text2 ">First we created our Drivy project on Android Studio.</h1>
+            <h1 class="hero-text2 ">Secondly we created a database using Firebase so we can store the driver and customer data the app receives and works with.</h1>
+            
+            <h1 class="hero-text2 "> For the customer side, there is a request button , which will retrieve the user's location and notify the closest driver. The customer can choose between DrivyX and DrivyBlack, which offers increased comfort.</h1>
+		<img src=" images/screenshot2.jpg" style="width:300px;height:600px; ">
+            <h1 class="hero-text2 "> There is also a search bar which lets the customer select the destination. This was implemented using the Places API from google.</h1>
+         <img src=" images/screenshot5.jpg" style="width:300px;height:600px; ">       
+		 <h1 class="hero-text2 "> The settings button will open a new activity, where the user can insert his/her data in dedicated text edits. An image view also gives them the possibility to add a profile picture. On the bottom of the screen there are 2 buttons: the confirm button will save everything in the database, while the back button will take you back to customer_map_activity. </h1>
+			<img src=" images/screenshot1.jpg " style="width:300px;height:600px; ">
+
+		<h1 class="hero-text2 "> The logout button will sign out the user and take him back to the main activity. </h1>
+
+            	<h1 class="hero-text2 "> The driver_map_activity is similar to the customer one: it has a settings button, which will open a new activity, where the driver can input personal information. </h1>
+            		<img src=" images/screenshot4.jpg " style="width:300px;height:600px; ">
+		<h1 class="hero-text2 "> When a request is made by a customer, the driver will see its lcation and personal data. It will also show the route to the customer, for an easier navigation.  </h1>
+			<img src=" images/screenshot3.jpg " style="width:300px;height:600px; ">
+		<h1 class="hero-text2 "> Meanwhile, the customer is able to see how far the driver is and also his contact number.</h1>
+        <img src=" images/screenshot7.jpg " style="width:300px;height:600px; ">
+
+        <h1 class="hero-text2 "> The 'logout' button will sign out the driver and take him back to the main page, same as for the customer.</h1>		
+		<h1 class="hero-text2">
+                <i><em>Video Presentation</em></i></h1>
+        <video width="1200" hieght="2400" controls>
+            <source src="video/Drivy Presentation.mp4" type = "video/mp4">
+        </video>    
+
+        </div>
+    </div>
+    </div>
+
+    <!--Photo thingy 4 -->
+    <div class="container " id="team">
+        <div class="parallax4 ">
+            <div class="hero-text-center ">
+                <h1>
+                    <i>Team</i>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!--Write about team here :-->
+    <div class="container ">
+        <div class="hero-text-content ">
+            <ul class="hero-text2"><i>Group 821:</i>
+                <li><a href="https://github.com/Codrin18">Diac Codrin</a></li>
+                <li><a href="https://github.com/LeuAndreea">Leu Andreea</a></li>
+                <li><a href="https://github.com/OanaLolea">Oana Lolea</a></li>
+                <li><a href="http://github.com/AndradaMereu">Mereu Andrada</a></li>
+                <li><a href="https://github.com/MoldovanAndrada">Moldovan Andrada</a></li>
+                <li><a href="https://github.com/mikellah">Moldovan Mihaela</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!--Footer just in case? :-->
+    <footer>
+        <div class=" container ">
+            <div class="parallax5 ">
+                <div class="hero-text-content ">
+                    <div class="hero-text-center3 ">
+                        <h1>
+                            <i>ANDROID THINGS </i>
+                        </h1>
+                        <h1>
+                            <i>GROUP PROJECT 2020</i>
+                        </h1>
+                        <h1>
+                            <i>Taxi App - Drivy</i>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
