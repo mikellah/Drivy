@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".CustomerSettingsActivity"
+android:orientation="vertical"
+android:padding="20sp"
+android:background="@drawable/custom_background2"
+android:gravity="center">
+
+<ImageView
+    android:id="@+id/profileImage"
+    android:layout_width="373dp"
+    android:layout_height="208dp"
+    android:layout_marginBottom="20sp"
+    android:src="@mipmap/default_user" />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:hint="Name"
+    android:layout_marginBottom="20sp"
+    android:id="@+id/name"
+    android:backgroundTint="#ffd452"
+    android:textSize="30sp"/>
+
+<EditText
+    android:id="@+id/phone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20sp"
+    android:background="@null"
+    android:hint="Phone Number"
+    android:inputType="number"
+    android:backgroundTint="#ffd452"
+    android:textSize="30sp"/>
+<EditText
+    android:id="@+id/car"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20sp"
+    android:background="@null"
+    android:hint="Car"
+    android:backgroundTint="#ffd452"
+    android:textSize="30sp"/>
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/radioGroup"
+    android:orientation="horizontal">
+    <RadioButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="DrivyX"
+        android:id="@+id/DrivyX"/>
+    <RadioButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="DrivyBlack"
+        android:id="@+id/DrivyBlack"/>
+
+</RadioGroup>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/confirm"
+    android:text="Confirm"
+    android:textSize="28sp"
+    android:textAllCaps="false"
+    android:textColor="#151714"
+    android:background="@drawable/custom_button2"
+    />
+<Button
+    android:layout_width="50dp"
+    android:layout_height="10dp"
+    android:visibility="invisible"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/back"
+    android:text="Back"
+    android:textSize="28sp"
+    android:textAllCaps="false"
+    android:textColor="#151714"
+    android:background="@drawable/custom_button2"
+    />
+</LinearLayout>
